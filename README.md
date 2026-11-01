@@ -31,7 +31,7 @@ The bottom wall is modeled as **adiabatic**, so the computed wall temperature is
 |---|---|
 | Mainstream temperature | 1200 K |
 | Coolant temperature | 600 K |
-| Blowing ratio M = ρcVc / ρ∞V∞ | [x.x] |
+| Blowing ratio M = ρcVc / ρ∞V∞ | [0.5] |
 | Mainstream velocity | [0.1] m/s |
 | Coolant velocity | [0.038] m/s |
 
