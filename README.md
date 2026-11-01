@@ -41,7 +41,7 @@ The bottom wall is modeled as **adiabatic**, so the computed wall temperature is
 - **Solver:** pressure-based, steady-state, 2D
 - **Turbulence model:** [e.g., SST k-ω]
 - **Wall treatment:** adiabatic, no-slip; y+ ≈ [x]
-- **Mesh:** [x] cells — see `docs/mesh.md`
+- **Mesh:** [0.2] cells — see `docs/mesh.md`
 
 ## Results
 
