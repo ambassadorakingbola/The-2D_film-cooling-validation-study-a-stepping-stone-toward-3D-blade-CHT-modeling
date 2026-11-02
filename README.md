@@ -15,6 +15,7 @@ The bottom wall is modeled as **adiabatic**, so the computed wall temperature is
 > η = (T_mainstream − T_adiaabatic wall) / (T_mainstream − T_coolant)
 
 ## Geometry
+![Geometry and boundary conditions: mainstream inlet/exit, coolant jet inlet/exit, injection angle β, and metering length L_m](docs/geometry_schematic.png)
 
 | Parameter | Value |
 |---|---|
