@@ -46,6 +46,10 @@ The bottom wall is modeled as **adiabatic**, so the computed wall temperature is
 
 ## Results
 
+![Wall total temperature along the bottom wall](results/plots/wall_temperature_xy.png)
+
+Adiabatic wall total temperature along `bottom_wall_chamber_longer_length`, resampled to 400 points ([raw data](results/data/wall_temperature_400pts.csv)). Wall temperature rises from ~838 K just downstream of the coolant hole toward the mainstream temperature (~1100 K) as the coolant film mixes out — the direct precursor to the film cooling effectiveness η(x) analysis.
+
 The contour above shows the coolant jet bending into the mainstream and forming a cooler film along the lower wall. Downstream of injection, near-wall temperatures remain well below the 1200 K mainstream before turbulent mixing gradually erodes the film.
 
 - Film cooling effectiveness vs. x/D: `results/plots/eta_vs_xD.png` *(in progress)*
@@ -56,14 +60,18 @@ The contour above shows the coolant jet bending into the mainstream and forming 
 ```
 ├── README.md
 ├── docs/
-│   ├── setup.md            # full boundary conditions and solver settings
-│   └── mesh.md             # mesh strategy, cell count, y+
+│   ├── geometry_schematic.png        # geometry and boundary-condition diagram
+│   ├── setup.md                      # (planned) full boundary conditions and solver settings
+│   └── mesh.md                       # (planned) mesh strategy, cell count, y+
 ├── results/
-│   ├── contours/           # temperature contour figures
-│   ├── plots/              # quantitative plots (effectiveness, convergence)
-│   └── data/               # exported wall temperature data (.xy)
+│   ├── contours/
+│   │   └── total_temperature_contour.png
+│   ├── data/
+│   │   └── wall_temperature_400pts.csv   # wall temperature, 400 points
+│   └── plots/
+│       └── wall_temperature_xy.png
 └── postprocessing/
-    └── make_eta_plot.py    # computes eta vs. x/D from Fluent XY export
+    └── make_eta_plot.py              # (planned) computes eta vs. x/D from Fluent XY export
 ```
 
 ## How to reproduce
